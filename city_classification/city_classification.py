@@ -107,13 +107,10 @@ dict = {}
 for i in range(54):
     if labels[i] == 1:
         dict[cc.index[i]] = '三线城市'
-        #result['class'][i] = '三线城市'
     elif labels[i] == 2:
         dict[cc.index[i]] = '一线城市'
-        #result['class'][i] = '一线城市'
     else:
         dict[cc.index[i]] = '二线城市'
-        #result['class'][i] = '二线城市'
         
 
 print(dict)
