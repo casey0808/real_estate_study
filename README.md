@@ -1,3 +1,3 @@
 ### Real Estate Study
 
-- City classification by real estate standards in China
+- City classification according to real estate indicators
