@@ -138,7 +138,7 @@ ax.scatter(pc2, pc1, pc3,
 
 # plot each point's index as text above
 for i in range(len(pc1)): 
-    ax.text(pc2[i], pc1[i], pc3[i]*1.05, '%s'%(cc.index[i]), ha = 'right', va = 'center', fontsize=10, color='k')
+    ax.text(pc2[i], pc1[i], pc3[i]*1.05, '%s'%(cc.index[i]), ha = 'right', va = 'center', fontsize=14, color='k')
     
 
     
