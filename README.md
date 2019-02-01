@@ -1,7 +1,6 @@
 ## Real Estate Study
 
 The repository includes the projects I completed related to Real Estate Industry.
-***
 
 
 ### City Classification
