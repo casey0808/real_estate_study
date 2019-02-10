@@ -6,12 +6,12 @@ from shapely.geometry import Point
 import geopandas as gpd
 import webbrowser
 
-
-
 df = pd.read_csv('rent.csv', encoding = 'gbk')
 print(df.head())
 
-# MarkerCluster Map
+
+# MarkerCluster
+
 m1 = folium.Map(location = [31.2304, 121.4737], zoom_start = 11)
 marker_cluster = MarkerCluster().add_to(m1)
  
@@ -22,16 +22,19 @@ for name, row in df.iterrows():
                                 number_of_sides = 10, radius = 5, fill_color = 'red', color = 'red',
                                opacity = 0.8, fill_opacity = 0.8).add_to(marker_cluster)
 
+
 m1.save('rental_apt.html')
 webbrowser.open('rental_apt.html')
 
 
 # HeatMap
-m2 = folium.Map(location = [31.2304, 121.4737], zoom_start = 11)
+
+m2 = folium.Map(location = [31.2304, 121.4737], zoom_start = 10)
 
 num = len(df.x)
 lat = np.array(df['y'][0:num])
 lon = np.array(df['x'][0:num])
+
 
 data = [[lat[i], lon[i]] for i in range(num)]
 
@@ -63,7 +66,7 @@ districts_with_counts['area'] = districts_with_counts.geometry.area
 #districts_with_counts['density'] = districts_with_counts.apply(lambda row: row.apt_count/row.area, axis = 1)                      
   
 # creation of the choropleth
-m3 = folium.Map(location = [31.2304, 121.4737], zoom_start = 8)
+m3 = folium.Map(location = [31.2304, 121.4737], zoom_start = 9)
 folium.Choropleth(geo_data = districts_with_counts, 
               name = 'geometry',
               data = districts_with_counts,
