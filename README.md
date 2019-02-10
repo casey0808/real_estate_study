@@ -10,10 +10,9 @@ The repository includes the projects I completed related to Real Estate Industry
 * Use markerclusters, heatmap and choropleth map to visualize the distribution of rental apartments in Shanghai.
 * Explore the interactive maps below:
   * [MarkerCluster](https://casey0808.github.io/real_estate_study/geospatial_data_visualization/rental_apt.html)
-  
-  ![png](/geospatial_data_visualization/markercluster.png)
   * [Heatmap](https://casey0808.github.io/real_estate_study/geospatial_data_visualization/rental_apt_heatmap.html)
   * [Choropleth](https://casey0808.github.io/real_estate_study/geospatial_data_visualization/rental_apt_choropleth.html)
 
+![png](/geospatial_data_visualization/markercluster.png)
 
 
