@@ -39,9 +39,15 @@ def secondery_market_monthly(file_path):
     dict2 = {'成交套数': num, '套均价格': avg_price/10000, '套均面积': avg_area}
     result2 = pd.DataFrame(dict2, index = [file_path[2:4]])
     
+    writer = pd.ExcelWriter('result.xlsx')
+    result2.to_excel(writer, '成交量价')
+    result1.to_excel(writer, '中介市占')
+    writer.save()
+    
     display(result2)
     print('全市场成交金额: ', total_amount/1e8)
     display(result1)
+    
     
     
 secondery_market_monthly('上海3月EDS数据.xlsx')
