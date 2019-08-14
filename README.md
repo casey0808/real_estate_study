@@ -3,7 +3,7 @@
 The repository includes the projects I completed related to Real Estate Industry.
 
 
-### 1. [City Classification](https://github.com/casey0808/real_estate_study/city_classification)
+### 1. [City Classification](https://github.com/casey0808/real_estate_study/tree/master/city_classification)
 * Use PCA and K-Means clustering to classify major cities in China according to real estate indicators, divide them into 3 categories: 'first, second and third-tier cities', then visualize the result. 
 
 ### 2. Geospatial Data Visualization using folium
@@ -16,5 +16,5 @@ The repository includes the projects I completed related to Real Estate Industry
 ![png](/geospatial_data_visualization/markercluster.png)
 
 ### 3. Monthly Report Generator
-* [New House](https://github.com/casey0808/real_estate_study/new_house)
-* [Second Hand House](https://github.com/casey0808/real_estate_study/second_hand_house)
+* [New House](https://github.com/casey0808/real_estate_study/tree/master//new_house)
+* [Second Hand House](https://github.com/casey0808/real_estate_study/tree/master//second_hand_house)
