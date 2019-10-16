@@ -42,7 +42,7 @@ def report_generator(file_path1, file_path2):
     result2 = pd.DataFrame(dict2, index = [df5.iloc[-1, 0]])
     
     # write the results into one excel file
-    writer = pd.ExcelWriter('result1.xlsx')
+    writer = pd.ExcelWriter('result_newhouse.xlsx')
     result.to_excel(writer, sheet_name = 'supply_and_sales')
     result2.to_excel(writer, sheet_name = 'prices')
     writer.save()
